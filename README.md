@@ -12,4 +12,4 @@
 * When different, non-overlapping regions of a read align with high scores to different, non-linear locations in the genome, the higher score alignment will be labeled as primary, the others may be reported as secondary alignments. There is some threshold on how many of these secondary alignments will be reported (bwa aln did not produce secondary alignments)
 * When complementary regions of a read (the pieces add up to the full read) align to different, non-linear genomic locations, with no little to no overlap, one of the alignments will be labeled as primary, the others as supplementary alignments (bwa aln did not produce supplementary alignments)
 
-[Linear, Chimeric, Supplementary, Primary and Secondary Alignments] (https://yulijia.net/en/bioinformatics/2015/12/21/Linear-Chimeric-Supplementary-Primary-and-Secondary-Alignments.html#fn:1)
+[Linear, Chimeric, Supplementary, Primary and Secondary Alignments](https://yulijia.net/en/bioinformatics/2015/12/21/Linear-Chimeric-Supplementary-Primary-and-Secondary-Alignments.html#fn:1)
