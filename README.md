@@ -17,7 +17,7 @@
 [samtools markdup vs PICARD's MarkDuplicates](https://www.biostars.org/p/390305/)
 * the methods perform similar for most applications and differences mainly affect edge cases such as supplementary alignments. 
 
-# Tags in SAM
+# Tags in SAM (BWA define)
 
 In the SAM (Sequence Alignment/Map) format, there are numerous tags that can be used to provide additional information about each read alignment. These tags often begin with two letters followed by a type character (like :Z for string, :i for integer, etc.). Some of the common and optional tags include:
 
