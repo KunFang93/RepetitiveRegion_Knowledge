@@ -5,6 +5,6 @@
 * reads align more than one region receive low MAPQ score
 * align to the whole reference including repetitive regions (i.e. no masking) and then filter out poor quality alignments post hoc
 
-[SAM](https://www.biostars.org/p/308853/](https://samtools.github.io/hts-specs/SAMv1.pdf)
+[SAM](https://samtools.github.io/hts-specs/SAMv1.pdf)
 
 [bwa mem and multiply mapped reads](https://www.biostars.org/p/304614/)
