@@ -22,7 +22,7 @@
 * samtools view -h my.bam | awk '$17 ~ /XA:/' || $1 ~ /^@/' | samtools view -bS - > my_unique.bam
 
 [Forum:Attention: Bowtie2 And Multiple Hits](https://www.biostars.org/p/55237/)
---non-deterministic for ranodmly distributing the multiple hit or otherwise bowtie2 hit one place (11years ago threads tho)
+* --non-deterministic for ranodmly distributing the multiple hit or otherwise bowtie2 hit one place (11years ago threads tho)
 
 # Tags in SAM (BWA define)
 
