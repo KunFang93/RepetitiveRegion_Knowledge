@@ -21,6 +21,9 @@
 * XA is produced for single ends. MAPQ is calculated for paired ends. Also, XA indicates there are similar hits. It doesn't imply those are equally best hits. The reads2pair error is probably caused by supplementary alignment.
 * samtools view -h my.bam | awk '$17 ~ /XA:/' || $1 ~ /^@/' | samtools view -bS - > my_unique.bam
 
+[Forum:Attention: Bowtie2 And Multiple Hits](https://www.biostars.org/p/55237/)
+--non-deterministic for ranodmly distributing the multiple hit or otherwise bowtie2 hit one place (11years ago threads tho)
+
 # Tags in SAM (BWA define)
 
 In the SAM (Sequence Alignment/Map) format, there are numerous tags that can be used to provide additional information about each read alignment. These tags often begin with two letters followed by a type character (like :Z for string, :i for integer, etc.). Some of the common and optional tags include:
