@@ -24,6 +24,9 @@
 [Forum:Attention: Bowtie2 And Multiple Hits](https://www.biostars.org/p/55237/)
 * --non-deterministic for ranodmly distributing the multiple hit or otherwise bowtie2 hit one place (11years ago threads tho)
 
+[samtools bitwise paired end](https://ppotato.wordpress.com/2010/08/25/samtool-bitwise-flag-paired-reads/)
+* some direction in figure2 is wrong
+
 # Tags in SAM (BWA define)
 
 In the SAM (Sequence Alignment/Map) format, there are numerous tags that can be used to provide additional information about each read alignment. These tags often begin with two letters followed by a type character (like :Z for string, :i for integer, etc.). Some of the common and optional tags include:
