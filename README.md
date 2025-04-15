@@ -27,6 +27,23 @@
 [samtools bitwise paired end](https://ppotato.wordpress.com/2010/08/25/samtool-bitwise-flag-paired-reads/)
 * some direction in figure2 is wrong
 
+[STAR params for TEtranscripts](https://github.com/mhammell-laboratory/TEtranscripts/issues/157)
+```
+STAR --genomeDir [STAR index] --readFilesIn [R1 FASTQ] [R2 FASTQ]                    \
+    --readFilesCommand zcat --runThreadN 10--genomeLoad NoSharedMemory      \
+    --outFilterMultimapNmax 20 --alignSJoverhangMin 8 --alignSJDBoverhangMin 1    \
+    --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.04              \
+    --alignIntronMin 20 --alignIntronMax 1000000 --alignMatesGapMax 1000000         \
+    --outSAMheaderHD @HD VN:1.4 SO:coordinate   --outSAMunmapped Within \
+    --outFilterType BySJout --outSAMattributes NH HI AS NM MD \
+    --outSAMtype BAM SortedByCoordinate  --sjdbScore 1  --limitBAMsortRAM 30000000000 \
+    --outFilterMultimapNmax 100 --winAnchorMultimapNmax 150
+```
+
+[saturation anaylsis for TEtranscripts](https://github.com/mhammell-laboratory/TEtranscripts/issues/151)
+* If your genome is vastly different to those above, (e.g. way larger or have more repetitive sequences), we recommend a saturation analysis to determine the best multi-mapping parameters
+
+
 # Tags in SAM (BWA define)
 
 In the SAM (Sequence Alignment/Map) format, there are numerous tags that can be used to provide additional information about each read alignment. These tags often begin with two letters followed by a type character (like :Z for string, :i for integer, etc.). Some of the common and optional tags include:
